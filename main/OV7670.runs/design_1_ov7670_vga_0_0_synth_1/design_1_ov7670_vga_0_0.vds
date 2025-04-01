@@ -1,0 +1,570 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Mar 29 19:33:26 2025
+# Process ID: 28912
+# Current directory: C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.runs/design_1_ov7670_vga_0_0_synth_1
+# Command line: vivado.exe -log design_1_ov7670_vga_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ov7670_vga_0_0.tcl
+# Log file: C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.runs/design_1_ov7670_vga_0_0_synth_1/design_1_ov7670_vga_0_0.vds
+# Journal file: C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.runs/design_1_ov7670_vga_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_ov7670_vga_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/custom'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.cache/ip 
+Command: synth_design -top design_1_ov7670_vga_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 51996 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 470.719 ; gain = 104.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_vga_0_0' [c:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/bd/design_1/ip/design_1_ov7670_vga_0_0/synth/design_1_ov7670_vga_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'ov7670_vga' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/new/ov7670_vga.vhd:26]
+INFO: [Synth 8-3491] module 'gui_fsm' declared at 'C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_fsm.vhd:10' bound to instance 'U_gui_fsm' of component 'gui_fsm' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/new/ov7670_vga.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'gui_fsm' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_fsm.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'gui_fsm' (1#1) [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_fsm.vhd:19]
+INFO: [Synth 8-3491] module 'gui_element_rom' declared at 'C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:8' bound to instance 'U_gui_element_rom' of component 'gui_element_rom' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/new/ov7670_vga.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'gui_element_rom' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'gui_element_rom' (2#1) [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:25]
+WARNING: [Synth 8-614] signal 'gui_update' is read in the process but is not in the sensitivity list [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/new/ov7670_vga.vhd:144]
+WARNING: [Synth 8-614] signal 'frame_pixel_m0' is read in the process but is not in the sensitivity list [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/new/ov7670_vga.vhd:144]
+WARNING: [Synth 8-614] signal 'frame_pixel_m1' is read in the process but is not in the sensitivity list [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/new/ov7670_vga.vhd:144]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_vga' (3#1) [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/new/ov7670_vga.vhd:26]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_vga_0_0' (4#1) [c:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/bd/design_1/ip/design_1_ov7670_vga_0_0/synth/design_1_ov7670_vga_0_0.v:58]
+WARNING: [Synth 8-3331] design gui_element_rom has unconnected port current_mode[2]
+WARNING: [Synth 8-3331] design gui_element_rom has unconnected port current_mode[1]
+WARNING: [Synth 8-3331] design gui_element_rom has unconnected port current_mode[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 816.555 ; gain = 450.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 816.555 ; gain = 450.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 816.555 ; gain = 450.723
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1281.715 ; gain = 0.363
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1281.715 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.883 . Memory (MB): peak = 1333.887 ; gain = 52.172
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,3][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,4][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,6][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,7][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,8][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,10][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,11][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,12][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,13][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,14][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,15][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,16][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,17][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,18][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,19][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,21][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,22][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,23][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,24][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,25][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,26][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,27][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,28][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,29][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,31][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,32][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,33][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,34][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,35][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,36][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,37][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,38][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[0,39][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,0][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,1][11:0]' into 'gui_MODE_reg[0,30][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,2][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,3][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,4][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,6][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,7][11:0]' into 'gui_MODE_reg[0,5][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,8][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,9][11:0]' into 'gui_MODE_reg[1,5][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,11][11:0]' into 'gui_MODE_reg[1,10][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,12][11:0]' into 'gui_MODE_reg[1,10][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,14][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,15][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,16][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,18][11:0]' into 'gui_MODE_reg[1,10][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,19][11:0]' into 'gui_MODE_reg[1,10][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,22][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,23][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,24][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,25][11:0]' into 'gui_MODE_reg[1,17][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,26][11:0]' into 'gui_MODE_reg[1,10][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,27][11:0]' into 'gui_MODE_reg[1,10][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,28][11:0]' into 'gui_MODE_reg[1,10][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,29][11:0]' into 'gui_MODE_reg[1,10][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,30][11:0]' into 'gui_MODE_reg[1,5][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,31][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,32][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,33][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,34][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,35][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,36][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,37][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,38][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[1,39][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,0][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,1][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,2][11:0]' into 'gui_MODE_reg[0,20][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,3][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,4][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,5][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,6][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,7][11:0]' into 'gui_MODE_reg[0,5][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,8][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,9][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,10][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,11][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,12][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,13][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,14][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,15][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,16][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,17][11:0]' into 'gui_MODE_reg[0,5][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,18][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,19][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,20][11:0]' into 'gui_MODE_reg[1,5][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,21][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,22][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,23][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,24][11:0]' into 'gui_MODE_reg[0,0][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,25][11:0]' into 'gui_MODE_reg[0,5][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,26][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,27][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,28][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,29][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,30][11:0]' into 'gui_MODE_reg[0,1][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,31][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Synth 8-4471] merging register 'gui_MODE_reg[2,32][11:0]' into 'gui_MODE_reg[0,2][11:0]' [C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.srcs/sources_1/imports/new/gui_element_rom.vhd:286]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "vCounter" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:01:04 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |ov7670_vga__GB0 |           1|     33037|
+|2     |ov7670_vga__GB1 |           1|     22040|
+|3     |ov7670_vga__GB2 |           1|     13807|
+|4     |ov7670_vga__GB3 |           1|     22055|
+|5     |ov7670_vga__GB4 |           1|     22913|
+|6     |ov7670_vga__GB5 |           1|     28534|
+|7     |ov7670_vga__GB6 |           1|     28187|
+|8     |ov7670_vga__GB7 |           1|      7802|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 7     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 23    
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 92    
+	   4 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module gui_element_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 23    
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module gui_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module ov7670_vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 7     
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 92    
+	   4 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][4]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][5]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][6]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][7]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][8]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][9]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][10]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_btn0_name_reg[1,50][11]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][8]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][9]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][10]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][11]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][8]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][8]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][8]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][8]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][9]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][9]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][9]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][9]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][10]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][10]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][10]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][10]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][11]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][11]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][11]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][11]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][4]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][5]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][6]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,9][7]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][4]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][5]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][6]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,5][7]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][4]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][5]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][6]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,20][7]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][1]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][1]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][2]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][2]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][3]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][3]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][4]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][4]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,5][6]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][4]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][5]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][5]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][5]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][5]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][7]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][6]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,5][7]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][6]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,1][4]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,17][7]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,1][4]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,5][7]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][8]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][9]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,1][4]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][10]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,1][4]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][11]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][4]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][5]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,1][4]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][6]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,1][4]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[0,30][7]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,21][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,20][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,13][0]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,21][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,20][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,13][1]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,21][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,20][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,13][2]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,21][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,20][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,13][3]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,21][4]' (FDRE) to 'U_gui_element_rom/gui_MODE_reg[0,1][0]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,20][4]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,1][4]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,13][4]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,1][4]'
+INFO: [Synth 8-3886] merging instance 'U_gui_element_rom/gui_MODE_reg[1,21][5]' (FDSE) to 'U_gui_element_rom/gui_MODE_reg[0,1][4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_gui_element_rom/gui_MODE_reg[0,1][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_gui_element_rom/gui_MODE_reg_reg[0,40][3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:45 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |ov7670_vga__GB0 |           1|     12990|
+|2     |ov7670_vga__GB1 |           1|     11102|
+|3     |ov7670_vga__GB2 |           1|      5214|
+|4     |ov7670_vga__GB3 |           1|       391|
+|5     |ov7670_vga__GB4 |           1|      9355|
+|6     |ov7670_vga__GB5 |           1|     11197|
+|7     |ov7670_vga__GB6 |           1|      9974|
+|8     |ov7670_vga__GB7 |           1|      3290|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:22 ; elapsed = 00:01:51 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:24 ; elapsed = 00:01:53 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |ov7670_vga__GB0 |           1|       480|
+|2     |ov7670_vga__GB1 |           1|       899|
+|3     |ov7670_vga__GB2 |           1|       184|
+|4     |ov7670_vga__GB3 |           1|       391|
+|5     |ov7670_vga__GB4 |           1|       934|
+|6     |ov7670_vga__GB5 |           1|       647|
+|7     |ov7670_vga__GB6 |           1|       207|
+|8     |ov7670_vga__GB7 |           1|       791|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:54 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:54 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:54 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:54 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:54 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:54 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:54 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     5|
+|2     |LUT1   |     5|
+|3     |LUT2   |    49|
+|4     |LUT3   |    86|
+|5     |LUT4   |    91|
+|6     |LUT5   |   284|
+|7     |LUT6   |   629|
+|8     |MUXF7  |   104|
+|9     |MUXF8  |     2|
+|10    |FDRE   |    91|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+----------------+------+
+|      |Instance              |Module          |Cells |
++------+----------------------+----------------+------+
+|1     |top                   |                |  1346|
+|2     |  inst                |ov7670_vga      |  1346|
+|3     |    U_gui_element_rom |gui_element_rom |  1095|
+|4     |    U_gui_fsm         |gui_fsm         |    11|
++------+----------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:54 . Memory (MB): peak = 1333.887 ; gain = 968.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:24 . Memory (MB): peak = 1333.887 ; gain = 450.723
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:55 . Memory (MB): peak = 1333.887 ; gain = 968.055
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 111 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_ov7670_vga_0_0' is not ideal for floorplanning, since the cellview 'gui_element_rom' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1333.887 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+232 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:57 . Memory (MB): peak = 1333.887 ; gain = 981.336
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1333.887 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.runs/design_1_ov7670_vga_0_0_synth_1/design_1_ov7670_vga_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1333.887 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/GuanYuhao/Documents/000_FILE/ECE532/22_Des/0_try/cap/main/OV7670.runs/design_1_ov7670_vga_0_0_synth_1/design_1_ov7670_vga_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_ov7670_vga_0_0_utilization_synth.rpt -pb design_1_ov7670_vga_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 29 19:35:30 2025...

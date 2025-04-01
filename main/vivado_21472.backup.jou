@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 31 20:48:24 2025
+# Process ID: 21472
+# Current directory: C:/Users/Joe/Desktop/UOFT/2025Win/ECE532/fin_kb/main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent43852 C:\Users\Joe\Desktop\UOFT\2025Win\ECE532\fin_kb\main\OV7670.xpr
+# Log file: C:/Users/Joe/Desktop/UOFT/2025Win/ECE532/fin_kb/main/vivado.log
+# Journal file: C:/Users/Joe/Desktop/UOFT/2025Win/ECE532/fin_kb/main\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Joe/Desktop/UOFT/2025Win/ECE532/fin_kb/main/OV7670.xpr
+open_bd_design {C:/Users/Joe/Desktop/UOFT/2025Win/ECE532/fin_kb/main/OV7670.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
