@@ -27,14 +27,14 @@ preplace portBus o_LED_0 -pg 1 -y 390 -defaultsOSRD
 preplace portBus vga_red_0 -pg 1 -y 680 -defaultsOSRD
 preplace portBus d_0 -pg 1 -y 70 -defaultsOSRD
 preplace inst ov7670_capture_0 -pg 1 -lvl 2 -y 100 -defaultsOSRD
-preplace inst mux_0 -pg 1 -lvl 4 -y 220 -defaultsOSRD
 preplace inst ov7670_controller_0 -pg 1 -lvl 5 -y 560 -defaultsOSRD
-preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -y 220 -defaultsOSRD
+preplace inst mux_0 -pg 1 -lvl 4 -y 220 -defaultsOSRD
 preplace inst debounce_0 -pg 1 -lvl 4 -y 570 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 5 -y 220 -defaultsOSRD
 preplace inst debounce_1 -pg 1 -lvl 1 -y 140 -defaultsOSRD
 preplace inst rgb444_to_gray_12bit_0 -pg 1 -lvl 3 -y 740 -defaultsOSRD
-preplace inst ps2_top_0 -pg 1 -lvl 4 -y 400 -defaultsOSRD
 preplace inst ov7670_vga_0 -pg 1 -lvl 4 -y 730 -defaultsOSRD
+preplace inst ps2_top_0 -pg 1 -lvl 4 -y 400 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 500 -defaultsOSRD
 preplace inst img_proc_top_0 -pg 1 -lvl 3 -y 260 -defaultsOSRD
 preplace netloc mux_0_outDin 1 4 1 N
