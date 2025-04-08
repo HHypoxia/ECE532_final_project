@@ -13,3 +13,7 @@ start_gui
 open_project C:/Users/Joe/Desktop/UOFT/2025Win/ECE532/github/fin_kb/main/OV7670.xpr
 
 update_compile_order -fileset sources_1
+update_module_reference design_1_ov7670_vga_0_0
+update_module_reference design_1_ov7670_controller_0_0
+update_module_reference design_1_ov7670_capture_0_0
+update_module_reference {design_1_debounce_0_0 design_1_debounce_0_1}
